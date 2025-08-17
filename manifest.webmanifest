@@ -5,7 +5,7 @@
   "start_url": "https://shaman2016scratch.github.io/shaman2016.github.io/",
   "icons": [
  {
-      "src": "shaman2016.github.io/files/favicon.jpg",
+      "src": "/shaman2016.github.io/files/favicon.jpg",
       "sizes": "120x120",
       "type": "image/jpg"
     }
