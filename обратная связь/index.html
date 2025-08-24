@@ -41,6 +41,7 @@
       form2_2 = document.getElementById("form2_2").value
       form2_3 = document.getElementById("form2_3").value
       form2_4 = document.getElementById("form2_4").value
+      form2_5 = document.getElementById("form2_5").value
   </script>
   <form action="ticket.html">
     <fieldset>
@@ -66,8 +67,28 @@
         <p>Ваш id в телеграм/ваш E-mail</p>
         <textarea id="form_4"></textarea>
       </div>
+      <div class="form2_element">
+        <p>E-mail/id в телеграм</p>
+        <select id="form2_5">
+          <option selected value="" disabled selected></option>
+          <option value="Email пользователя">Email</option>
+          <option value="id пользователя в телеграм">id в телеграм</option>
+        </select>
+      </div>
       <div class="button1_form2">
-        <button type="submit">Отправить</button>
+        <button id="form2_button1" type="submit">Отправить</button>
+        <script>
+          text_message = `Пришёл ответ на вторую форму обратной связи сайта shaman2016. вот ответы: тип запроса: ${form2_1}, текст запроса: ${form2_2}, обращение  к пользователю: ${form2_3}, ${form2_5}: ${form_4}`
+          const button = document.querySelector('form2_button1');
+          button.addEventListener('click', function() {
+          const url = `https://api.telegram.org/bot7687335881:AAGo4YCVJTypw3ETICWlpscAQN90Jeegvdk/sendMessage?chat_id=6049462351&text=${text_message}`;  
+           await fetch(url, {  
+             method: 'POST',  
+             headers: {  
+        'Content-Type': 'application/json',
+          };
+          });
+        </script>
       </div>
     </fieldset>
   </form>
