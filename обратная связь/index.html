@@ -35,11 +35,18 @@
 <h3>Или</h3>
 <h5>ПОКА НЕ РАБОТАЕТ</h5>
 <div class="form2">
+  <script>
+    while (true)
+      form2_1 = document.getElementById("form2_1").value
+      form2_2 = document.getElementById("form2_2").value
+      form2_3 = document.getElementById("form2_3").value
+      form2_4 = document.getElementById("form2_4").value
+  </script>
   <form action="ticket.html">
     <fieldset>
       <div class="form2_element">
         <p>Тип вашего запроса</p>
-        <select>
+        <select id="form2_1">
           <option selected value="" disabled selected></option>
           <option value="1">Предложение</option>
           <option value="2">Комментарий</option>
@@ -49,15 +56,15 @@
       </div>
       <div class="form2_element">
         <p>Текст запроса</p>
-        <textarea></textarea>
+        <textarea id="form2_2"></textarea>
       </div>
       <div class="form2_element">
         <p>Как к вам обращаться</p>
-        <textarea></textarea>
+        <textarea id="form2_3"></textarea>
       </div>
       <div class="form2_element">
         <p>Ваш id в телеграм/ваш E-mail</p>
-        <textarea></textarea>
+        <textarea id="form_4"></textarea>
       </div>
       <div class="button1_form2">
         <button type="submit">Отправить</button>
