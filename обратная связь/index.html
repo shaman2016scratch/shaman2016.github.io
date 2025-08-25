@@ -35,15 +35,15 @@
 <h3>Или</h3>
 <h5>ПОКА НЕ РАБОТАЕТ</h5>
 <div class="form2">
-  <script>
-    while (true)
-      form2_1 = document.getElementById("form2_1").value
-      form2_2 = document.getElementById("form2_2").value
-      form2_3 = document.getElementById("form2_3").value
-      form2_4 = document.getElementById("form2_4").value
-      form2_5 = document.getElementById("form2_5").value
-  </script>
   <form action="ticket.html">
+    <script>
+      while (true)
+        form2_1 = document.getElementById("form2_1").value
+        form2_2 = document.getElementById("form2_2").value
+        form2_3 = document.getElementById("form2_3").value
+        form2_4 = document.getElementById("form2_4").value
+        form2_5 = document.getElementById("form2_5").value
+    </script>
     <fieldset>
       <div class="form2_element">
         <p>Тип вашего запроса</p>
@@ -53,6 +53,9 @@
           <option value="2">Комментарий</option>
           <option value="3">Вопрос</option>
           <option value="4">Сообщение об ошибке</option>
+          <script>
+            form2_1 = document.getElementById("form2_1").value
+          </script>
         </select>
       </div>
       <div class="form2_element">
@@ -76,7 +79,7 @@
         </select>
       </div>
       <div class="button1_form2">
-        <button id="form2_button1" type="submit">Отправить</button>  
+        <button id="form2_button1" type="submit">Отправить</button>
       </div>
     </fieldset>
   </form>
