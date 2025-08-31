@@ -1,7 +1,7 @@
 [general]
 host = 0.0.0.0
 port = 80
-root = "./"
+root = "./shaman2016.github.io"
 
 log-level = "error"
 log-remote-address = false
