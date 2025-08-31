@@ -1,4 +1,4 @@
-var btn = document.getElementById("theme-button");
+var btn = document.getElementById("tema-button");
 var link = document.getElementById("theme-link");
 
 btn.addEventListener("click", function () { ChangeTheme(); });
