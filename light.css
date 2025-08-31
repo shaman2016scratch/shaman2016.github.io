@@ -8,39 +8,8 @@ body, html
     font-siz: 16px;
 }
 
-.wrapper
-{
-    width: 100%;
-}
 
-.header
-{
-    background: #ccc;
-}
-
-.header__content
-{
-    padding: 5px;
-}
-
-.nav__item
-{
-    display: inline-block;
-    vertical-align: middle;
-    padding: 15px 25px;
-    margin: 2px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.main__content
-{
-    width: 80%;
-    margin: 0 auto;
-}
-
-
-.theme-button
+.tema-button
 {
     position: absolute;
     right: 5px;
