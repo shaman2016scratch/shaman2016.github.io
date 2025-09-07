@@ -37,12 +37,13 @@
 <div class="form2">
   <form action="ticket.html.html?1=${form2_1}&2=${form2_2}&3$={form2_3}&4=${form2_4}&5=${form2_5}">
     <script>
-      while (true)
+      while (true):
         form2_1 = document.getElementById("form2_1").value;
         form2_2 = document.getElementById("form2_2").value;
         form2_3 = document.getElementById("form2_3").value;
         form2_4 = document.getElementById("form2_4").value;
         form2_5 = document.getElementById("form2_5").value;
+        document.getElementById("form2_1_dop_1").innerHTML = "${form2_1}"  
     </script>
     <fieldset>
       <div class="form2_element">
@@ -56,6 +57,7 @@
           <script>
             form2_1 = document.getElementById("form2_1").value
           </script>
+          <p><p>Ваш ответ: </p><p id="form2_1_dop_1"></p></p>
         </select>
       </div>
       <div class="form2_element">
