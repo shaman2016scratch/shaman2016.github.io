@@ -7,7 +7,11 @@
   <body>
     <p id="txt">Что-то</p>
     <script>
-      document.getElementById("txt").textContent = 'uupdate';
+      document.getElementById("txt").textContent = 'update';
+      const url = new URL(window.location);
+      const searchParams = url.searchParams;
+      txt = searchParams.get('txt')
+      document.getElementById("txt").textContent = txt;
     </script>
   </body>
 </html>
