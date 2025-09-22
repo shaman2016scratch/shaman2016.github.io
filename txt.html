@@ -1,13 +1,6 @@
 <html>
   <head>
     <title id="title">txt.txt.txt</title>
-    <script>
-      const url = new URL(window.location);
-      const searchParams = url.searchParams;
-      txt = searchParams.get('txt')
-      title = `${txt}.txt`
-      document.getElementById("title").textContent = title;
-    </script>
   </head>
   <body>
     <p id="txt">Что-то</p>
@@ -17,6 +10,9 @@
       const searchParams = url.searchParams;
       txt = searchParams.get('txt')
       document.getElementById("txt").textContent = txt;
+      txt = searchParams.get('txt')
+      title = `${txt}.txt`
+      document.getElementById("title").textContent = title;
     </script>
   </body>
 </html>
