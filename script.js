@@ -3,4 +3,3 @@ test = "testing js";
 console.log(test);
 const url = new URL(window.location);
 const searchParams = url.searchParams;
-pdebug = searchParams.get('_ym_debug');
