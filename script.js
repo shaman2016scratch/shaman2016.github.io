@@ -7,7 +7,7 @@ pdebug = searchParams.get('_ym_debug');
 function debug() {
   document.getElementById("title").textContent = `YandexMetrica_debug_${pdebug}`;
 }
-lang_ym = searchParams.get('?_ym_status-check=103647270&_ym_lang');
+lang_ym = searchParams.get('?_ym_status-check');
 function ymlang() {
   document.getElementById("title").textContent = `YandexMetrica_ymlang_${lang_ym}`;
 }
