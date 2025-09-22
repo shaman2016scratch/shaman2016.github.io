@@ -12,12 +12,12 @@ function ymlang() {
   document.getElementById("title").textContent = `YandexMetrica_ymlang_${lang_ym}`;
 }
 if pdebug = '' {
-  console.log("ym_debug не обнаружен!")
+  console.log("ym_debug не обнаружен!");
 } else {
-  debug()
+  debug();
 }
 if lang_ym = '' {
-  console.log("ym_status-check")
+  console.log("ym_status-check");
 } else {
-  ymlang()
+  ymlang();
 }
