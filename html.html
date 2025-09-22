@@ -1,0 +1,17 @@
+<div id="htmlHtml">
+  <html>
+  <head>
+    <title id="title">html.html.html</title>
+  </head>
+  <body>
+    <p id="txt">Что-то</p>
+  </body>
+  </html>
+</div>
+<script>
+  document.getElementById("txt").textContent = 'update';
+  const url = new URL(window.location);
+  const searchParams = url.searchParams;
+  codehtml = searchParams.get('html')
+  document.getElementById("htmlHtml").textContent = codehtml;
+</script>
