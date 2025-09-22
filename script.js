@@ -13,13 +13,11 @@ function ymlang() {
 }
 if pdebug = '' {
   console.log("ym_debug не обнаружен!")
-}
-else {
+} else {
   debug()
 }
 if lang_ym = '' {
   console.log("ym_status-check")
-}
-else {
+} else {
   ymlang()
 }
