@@ -78,20 +78,20 @@
       </div>
     </fieldset>
   </form>
-  <button onclick="click.form.2()">Обновить значение</button>
+  <button onclick="clickForm2()">Обновить значение</button>
 </div>
 <script>
-  function click.form.2() {
+  function clickForm2() {
     form2_1 = document.getElementById("form2_1").value;
     form2_2 = document.getElementById("form2_2").value;
     form2_3 = document.getElementById("form2_3").value;
     form2_4 = document.getElementById("form2_4").value;
     form2_5 = document.getElementById("form2_5").value;
-    document.setElementById("form2_1_dop_1").textContent = "${form2_1}";
-    document.setElementById("form2_2_dop_1").textContent = "${form2_2}";
+    document.getElementById("form2_1_dop_1").textContent = "${form2_1}";
+    document.getElementById("form2_2_dop_1").textContent = "${form2_2}";
     document.setElementById("form2_3_dop_1").textContent = "${form2_3}";
-    document.setElementById("form2_4_dop_1").textContent = "${form2_4}";
-    document.setElementById("form2_5_dop_1").textContent = "${form2_5}";
+    document.getElementById("form2_4_dop_1").textContent = "${form2_4}";
+    document.getElementById("form2_5_dop_1").textContent = "${form2_5}";
   }
 </script>
 </body>
