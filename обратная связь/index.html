@@ -36,15 +36,6 @@
 <h5>ПОКА НЕ РАБОТАЕТ</h5>
 <div class="form2">
   <form action="ticket.html.html?1=${form2_1}&2=${form2_2}&3$={form2_3}&4=${form2_4}&5=${form2_5}">
-    <script>
-      while (true):
-        form2_1 = document.getElementById("form2_1").value;
-        form2_2 = document.getElementById("form2_2").value;
-        form2_3 = document.getElementById("form2_3").value;
-        form2_4 = document.getElementById("form2_4").value;
-        form2_5 = document.getElementById("form2_5").value;
-        document.setElementById("form2_1_dop_1").innerHTML = "${form2_1}";
-    </script>
     <fieldset>
       <div class="form2_element">
         <p>Тип вашего запроса</p>
@@ -54,23 +45,23 @@
           <option value="2">Комментарий</option>
           <option value="3">Вопрос</option>
           <option value="4">Сообщение об ошибке</option>
-          <script>
-            form2_1 = document.getElementById("form2_1").value
-          </script>
         </select>
         <p><p>Ваш ответ: </p><p id="form2_1_dop_1"></p></p>
       </div>
       <div class="form2_element">
         <p>Текст запроса</p>
         <textarea id="form2_2"></textarea>
+        <p><p>Ваш ответ: </p><p id="form2_2_dop_1"></p></p>
       </div>
       <div class="form2_element">
         <p>Как к вам обращаться</p>
         <textarea id="form2_3"></textarea>
+        <p><p>Ваш ответ: </p><p id="form2_3_dop_1"></p></p>
       </div>
       <div class="form2_element">
         <p>Ваш id в телеграм/ваш E-mail</p>
         <textarea id="form_4"></textarea>
+        <p><p>Ваш ответ: </p><p id="form2_4_dop_1"></p></p>
       </div>
       <div class="form2_element">
         <p>E-mail/id в телеграм</p>
@@ -79,6 +70,7 @@
           <option value="Email пользователя">Email</option>
           <option value="id пользователя в телеграм">id в телеграм</option>
         </select>
+        <p><p>Ваш ответ: </p><p id="form2_5_dop_1"></p></p>
       </div>
       <div class="button1_form2">
         <br>
@@ -86,6 +78,21 @@
       </div>
     </fieldset>
   </form>
+  <button onclick="click.form.2()">Обновить значение</button>
 </div>
+<script>
+  function click.form.2() {
+    form2_1 = document.getElementById("form2_1").value;
+    form2_2 = document.getElementById("form2_2").value;
+    form2_3 = document.getElementById("form2_3").value;
+    form2_4 = document.getElementById("form2_4").value;
+    form2_5 = document.getElementById("form2_5").value;
+    document.setElementById("form2_1_dop_1").innerHTML = "${form2_1}";
+    document.setElementById("form2_2_dop_1").innerHTML = "${form2_2}";
+    document.setElementById("form2_3_dop_1").innerHTML = "${form2_3}";
+    document.setElementById("form2_4_dop_1").innerHTML = "${form2_4}";
+    document.setElementById("form2_5_dop_1").innerHTML = "${form2_5}";
+  }
+</script>
 </body>
 </html>
