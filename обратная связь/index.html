@@ -46,22 +46,22 @@
           <option value="3">Вопрос</option>
           <option value="4">Сообщение об ошибке</option>
         </select>
-        <p><p>Ваш ответ: </p><p id="form2_1_dop_1"></p></p>
+        <p id="form2_1_dop_1">Ваш ответ: </p>
       </div>
       <div class="form2_element">
         <p>Текст запроса</p>
         <textarea id="form2_2"></textarea>
-        <p><p>Ваш ответ: </p><p id="form2_2_dop_1"></p></p>
+        <p id="form2_2_dop_1">Ваш ответ: </p>
       </div>
       <div class="form2_element">
         <p>Как к вам обращаться</p>
         <textarea id="form2_3"></textarea>
-        <p><p>Ваш ответ: </p><p id="form2_3_dop_1"></p></p>
+        <p id="form2_3_dop_1">Ваш ответ: </p>
       </div>
       <div class="form2_element">
         <p>Ваш id в телеграм/ваш E-mail</p>
         <textarea id="form_4"></textarea>
-        <p><p>Ваш ответ: </p><p id="form2_4_dop_1"></p></p>
+        <p id="form2_4_dop_1">Ваш ответ: </p>
       </div>
       <div class="form2_element">
         <p>E-mail/id в телеграм</p>
@@ -70,7 +70,7 @@
           <option value="Email пользователя">Email</option>
           <option value="id пользователя в телеграм">id в телеграм</option>
         </select>
-        <p><p>Ваш ответ: </p><p id="form2_5_dop_1"></p></p>
+        <p id="form2_5_dop_1">Ваш ответ: </p>
       </div>
       <div class="button1_form2">
         <br>
@@ -87,11 +87,11 @@
     form2_3 = document.getElementById("form2_3").value;
     form2_4 = document.getElementById("form2_4").value;
     form2_5 = document.getElementById("form2_5").value;
-    document.getElementById("form2_1_dop_1").textContent = "${form2_1}";
-    document.getElementById("form2_2_dop_1").textContent = "${form2_2}";
-    document.setElementById("form2_3_dop_1").textContent = "${form2_3}";
-    document.getElementById("form2_4_dop_1").textContent = "${form2_4}";
-    document.getElementById("form2_5_dop_1").textContent = "${form2_5}";
+    document.getElementById("form2_1_dop_1").textContent = "Ваш ответ: ${form2_1}";
+    document.getElementById("form2_2_dop_1").textContent = "Ваш ответ: ${form2_2}";
+    document.setElementById("form2_3_dop_1").textContent = "Ваш ответ: ${form2_3}";
+    document.getElementById("form2_4_dop_1").textContent = "Ваш ответ: ${form2_4}";
+    document.getElementById("form2_5_dop_1").textContent = "Ваш ответ: ${form2_5}";
   }
 </script>
 </body>
