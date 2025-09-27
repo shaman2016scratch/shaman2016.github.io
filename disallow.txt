@@ -4,5 +4,7 @@ https://shaman2016scratch.github.io/shaman2016.github.io/404
 https://shaman2016scratch.github.io/shaman2016.github.io/405
 https://shaman2016scratch.github.io/shaman2016.github.io/500
 https://shaman2016scratch.github.io/shaman2016.github.io/503
-https://shaman2016scratch.github.io/shaman2016.github.io/Проект%20(12).html
-https://shaman2016scratch.github.io/shaman2016.github.io/Проект%20(12)%20(1).html
+https://shaman2016scratch.github.io/shaman2016.github.io/инструменты/3/Проект%20(12).html
+https://shaman2016scratch.github.io/shaman2016.github.io/инструменты/3/Проект%20(12)%20(1).html
+https://shaman2016scratch.github.io/shaman2016.github.io/.replit
+https://shaman2016scratch.github.io/shaman2016.github.io/Проект%20(7).html
