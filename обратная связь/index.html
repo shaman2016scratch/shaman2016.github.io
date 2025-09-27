@@ -39,6 +39,10 @@
     <fieldset>
       <div class="form2_element">
         <p>Тип вашего запроса</p>
+        <input type="radio" name="type" value="1"> Предложение</input>
+        <input type="radio" name="type" value="2"> Комментарий</input>
+        <input type="radio" name="type" value="3"> Вопрос</input>
+        <input type="radio" name="type" value="2"> Сообщение об ошибке</input>
         <select id="form2_1">
           <option value="" disabled selected></option>
           <option value="1">Предложение</option>
@@ -47,25 +51,26 @@
           <option value="4">Сообщение об ошибке</option>
         </select>
         <p>Ваш ответ:</p>
-        <p id="form2_1_dop_1">Ваш ответ: </p>
+        <p id="form2_1_dop_1"></p>
+        <p id="form2_1_dop_2"></p>
       </div>
       <div class="form2_element">
         <p>Текст запроса</p>
         <input type="text" placeholder="Текст запроса" id="form2_2">
         <p>Ваш ответ:</p>
-        <p id="form2_2_dop_1">Ваш ответ: </p>
+        <p id="form2_2_dop_1"></p>
       </div>
       <div class="form2_element">
         <p>Как к вам обращаться</p>
         <input type="text" placeholder="..." id="form2_3">
         <p>Ваш ответ:</p>
-        <p id="form2_3_dop_1">Ваш ответ: </p>
+        <p id="form2_3_dop_1"></p>
       </div>
       <div class="form2_element">
         <p>Ваш id в телеграм/ваш E-mail</p>
         <input type="text" placeholder="...">
         <p>Ваш ответ:</p>
-        <p id="form2_4_dop_1">Ваш ответ: </p>
+        <p id="form2_4_dop_1"></p>
       </div>
       <div class="form2_element">
         <p>E-mail/id в телеграм</p>
@@ -75,7 +80,7 @@
           <option value="2">id в телеграм</option>
         </select>
         <p>Ваш ответ:</p>
-        <p id="form2_5_dop_1">Ваш ответ: </p>
+        <p id="form2_5_dop_1"></p>
       </div>
       <div class="button1_form2">
         <br>
@@ -92,7 +97,9 @@
     form2_3 = document.getElementById("form2_3").value;
     form2_4 = document.getElementById("form2_4").value;
     form2_5 = document.getElementById("form2_5").value;
+    type = document.getElementById("type").value;
     document.getElementById("form2_1_dop_1").textContent = form2_1;
+    document.getElementById("form2_1_dop_2").textContent = type;
     document.getElementById("form2_2_dop_1").textContent = form2_2;
     document.getElementById("form2_3_dop_1").textContent = form2_3;
     document.getElementById("form2_4_dop_1").textContent = form2_4;
