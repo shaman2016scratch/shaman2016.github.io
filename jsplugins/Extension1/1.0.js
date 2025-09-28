@@ -25,5 +25,7 @@ function m(z1,z2,z3) {
       preturn = z1 / z3
       return preturn
     }
+  } else {
+    console.error("the library for mathematics has not been imported")
   }
 }
