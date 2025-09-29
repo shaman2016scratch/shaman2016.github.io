@@ -29,3 +29,5 @@ https://shaman2016scratch.github.io/shaman2016.github.io/wiki/scratchwikibyshama
 https://wikipediaByShaman2016.github.io
 https://scratchwikiByShaman2016.github.io
 https://shaman2016scratch.github.io/shaman2016.github.io/wiki/wikipediabyshaman2016
+https://shaman2016scratch.github.io/shaman2016.github.io/jsplugins/
+https://shaman2016scratch.github.io/shaman2016.github.io/extensions/
