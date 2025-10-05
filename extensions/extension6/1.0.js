@@ -1,6 +1,5 @@
-/*
-   Created with ExtForge
-   https://jwklong.github.io/extforge
+/* 
+Оно немного сделано через ExtForge но: тут все же есть код который я сделал сам на своих знаниях js 
 */
 (async function(Scratch) {
     const variables = {};
