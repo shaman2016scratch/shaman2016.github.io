@@ -76,9 +76,14 @@
                 "color1": "#00b000",
                 "blocks": [{
                     "opcode": "block_1",
-                    "text": "Сохранить куки [1-1]",
+                    "text": "Сохранить куки [1-1] [1-2] по адресу [1-3] действие до [1-4]",
                     "blockType": Scratch.BlockType.COMMAND,
-                    "arguments": {}
+                    "arguments": {"1-1":"{"type":"Scratch.ArgumentType.STRING"}","1-2":"{"type":"Scratch.ArgumentType.STRING"}","1-3":"{"type":"Scratch.ArgumentType.STRING"}","1-4":"{"type":"Scratch.ArgumentType.STRING"}"}
+                }, {
+                    "opcode": "block_2",
+                    "text": "Сохранить в локлаьном хранилище [2-1] [2-2]",
+                    "blockType": Scratch.BlockType.COMMAND,
+                    "arguments": {"2-1":"{"type":"Scratch.ArgumentType.STRING"}","2-2":"{"type":"Scratch.ArgumentType.STRING"}"}
                 }]
                 }
             }
