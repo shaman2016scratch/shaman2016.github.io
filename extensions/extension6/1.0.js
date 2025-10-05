@@ -1,3 +1,7 @@
+function output(g) {
+   w1 = g
+   return (g)
+}
 /*
    Created with ExtForge
    https://jwklong.github.io/extforge
@@ -115,10 +119,10 @@
             eval(args["64da17827811ee9b"])
         }
         async block_2508108deeadbfe3(args) {
-            return (eval(args["c102856b32dd671c"]))
+            output(return (eval(args["c102856b32dd671c"])))
         }
         async block_b40918ade783bba9(args) {
-            return (eval(args["4989c57eeb7d0fc9"]))
+            output(return (eval(args["4989c57eeb7d0fc9"])))
         }
     }
 
