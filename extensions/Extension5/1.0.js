@@ -89,7 +89,16 @@
             }
         }
         async block_1(args) {
-            zagTERMINsdk()
+          per1 = args.1-1
+          per2 = args.1-2
+          per3 = args.1-3
+          per4 = args.1-4
+          document.cookie = `${per1}=${per2}; path=${per3}; expires=${per4}`;
+        }
+        async block_1(args) {
+          per1 = args.2-1
+          per2 = args.2-2
+          localStorage.setItem(`${per1}`, `${per2}`);
         }
     }
 
