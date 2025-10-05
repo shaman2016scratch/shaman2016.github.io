@@ -1,7 +1,3 @@
-function output(g) {
-   w1 = g
-   return (g)
-}
 /*
    Created with ExtForge
    https://jwklong.github.io/extforge
@@ -76,6 +72,11 @@ function output(g) {
         }
     }
 
+   function output(g) {
+     w1 = g
+     return (g)
+   }
+
     class Extension {
         getInfo() {
             return {
@@ -99,7 +100,7 @@ function output(g) {
                     "arguments": {
                         "c102856b32dd671c": {
                             "type": "string",
-                            "defaultValue": "function output() { return (\"hello\") }"
+                            "defaultValue": "output(\"hello\")"
                         }
                     }
                 }, {
@@ -109,7 +110,7 @@ function output(g) {
                     "arguments": {
                         "4989c57eeb7d0fc9": {
                             "type": "string",
-                            "defaultValue": "function output() { return 1 < 2 }"
+                            "defaultValue": "output(\"1 < 2\")"
                         }
                     }
                 }]
@@ -119,10 +120,10 @@ function output(g) {
             eval(args["64da17827811ee9b"])
         }
         async block_2508108deeadbfe3(args) {
-            output(return (eval(args["c102856b32dd671c"])))
+            return (eval(args["c102856b32dd671c"]))
         }
         async block_b40918ade783bba9(args) {
-            output(return (eval(args["4989c57eeb7d0fc9"])))
+            return (eval(args["4989c57eeb7d0fc9"]))
         }
     }
 
