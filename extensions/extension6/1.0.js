@@ -95,7 +95,7 @@
                     "arguments": {
                         "c102856b32dd671c": {
                             "type": "string",
-                            "defaultValue": "return (\"hello\")"
+                            "defaultValue": "function output() { return (\"hello\") }"
                         }
                     }
                 }, {
@@ -105,7 +105,7 @@
                     "arguments": {
                         "4989c57eeb7d0fc9": {
                             "type": "string",
-                            "defaultValue": "return 1 < 2"
+                            "defaultValue": "function output() { return 1 < 2 }"
                         }
                     }
                 }]
