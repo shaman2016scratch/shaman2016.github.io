@@ -75,7 +75,7 @@
     class Extension {
         getInfo() {
             return {
-                "id": "JavaScript Runner",
+                "id": "JavaScriptRunner",
                 "name": "JavaScript",
                 "color1": "#0fbd8c",
                 "blocks": [{
