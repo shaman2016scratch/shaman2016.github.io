@@ -88,8 +88,8 @@
                     "opcode": "block_3",
                     "text": "Сохранить в сессионном хранилище [3-1] [3-2]",
                     "blockType": Scratch.BlockType.COMMAND,
-                    "arguments": {"3-1":"{"type":"Scratch.ArgumentType.STRING"}","3-2":"{"type":"Scratch.ArgumentType.STRING"}"}
-                    }]
+                    "arguments": {"3-1":"{type:Scratch.ArgumentType.STRING}","3-2":"{type:Scratch.ArgumentType.STRING}"}
+                }]
                 }
             }
         }
