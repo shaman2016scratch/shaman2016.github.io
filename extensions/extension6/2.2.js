@@ -13,7 +13,11 @@
     let sandboxed = true;
 
     const functions = `
-        function output(out) {return out;}; function error(err) { output(`error: ${err}`); }; function warn(warn) { output(`warn: ${warn}`); }; function arrayFrom2(a1,a2) { output(`[${a1},${a2}]`); }; function arrayFrom3(a1,a2,a3) { output(`[${a1},${a2},${a3}]`); }
+        function output(out) {return out;}
+        function error(err) { output(`error: ${err}`); }
+        function warn(warn) { output(`warn: ${warn}`); }
+        function arrayFrom2(a1,a2) { output(`[${a1},${a2}]`); }
+        function arrayFrom3(a1,a2,a3) { output(`[${a1},${a2},${a3}]`) }
     `
 
     class JavaScriptExtension {

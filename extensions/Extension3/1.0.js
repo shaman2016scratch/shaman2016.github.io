@@ -1,3 +1,4 @@
+(async function(Scratch) {
 let terminSDKzag = (false)
 const url = new URL(window.location);
 const searchParams = url.searchParams;
@@ -25,7 +26,6 @@ function delTERMINsdk() {
 function TERMINstatus() {
   return (terminSDKzag)
 }
-(async function(Scratch) {
     const variables = {};
 
 
