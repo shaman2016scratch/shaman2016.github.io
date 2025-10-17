@@ -101,21 +101,57 @@
                 },
             },
            }, {
-              opcode: "block7",
-              blockType: Scratch.BlockType.reporter,
-              text: "abs [p1]",
-              arguments: {
-                p1: {
-                  defaultValue: "100",
-                  type: Scratch.ArgumentType.NUMBER,
-                }, {
-              opcode: "block8",
-              blockType: Scratch.BlockType.reporter,
-              text: "The whole is bigger [p1]",
-              arguments: {
-                p1: {
-                  defaultValue: "100.7",
-                  type: Scratch.ArgumentType.NUMBER,
+                opcode: "block7",
+                blockType: Scratch.BlockType.reporter,
+                text: "abs [p1]",
+                arguments: {
+                  p1: {
+                    defaultValue: "-100",
+                    type: Scratch.ArgumentType.NUMBER,
+                },
+            },
+           }, {
+                opcode: "block8",
+                blockType: Scratch.BlockType.reporter,
+                text: "The whole is bigger [p1]",
+                arguments: {
+                  p1: {
+                    defaultValue: "100.7",
+                    type: Scratch.ArgumentType.NUMBER,
+                },
+            },
+           }, {
+                opcode: "block9",
+                blockType: Scratch.BlockType.reporter,
+                text: "The whole is smaller [p1]",
+                arguments: {
+                  p1: {
+                    defaultValue: "100.7",
+                    type: Scratch.ArgumentType.NUMBER,
+                },
+            },
+           }, {
+                opcode: "block10",
+                blockType: Scratch.BlockType.reporter,
+                text: "Round it up [p1]",
+                arguments: {
+                  p1: {
+                    defaultValue: "100.7",
+                    type: Scratch.ArgumentType.NUMBER,
+                },
+            },
+           }, {
+                opcode: "block11",
+                blockType: Scratch.BlockType.reporter,
+                text: "random [p1] [p2]",
+                arguments: {
+                  p1: {
+                    defaultValue: "1",
+                    type: Scratch.ArgumentType.NUMBER,
+                },
+                  p2: {
+                    defaultValue: "10",
+                    type: Scratch.ArgumentType.NUMBER,
                 },
             },
            },
@@ -168,6 +204,22 @@ block7(args) {
 block8(args) {
   Per1 = [args.p1]);
   breturn = Math.ceil(Per1)
+  return (breturn)
+}
+block9(args) {
+  Per1 = [args.p1]);
+  breturn = Math.floor(Per1)
+  return (breturn)
+}
+block10(args) {
+  Per1 = [args.p1]);
+  breturn = Math.round(Per1)
+  return (breturn)
+}
+block11(args) {
+  Per1 = [args.p1]);
+  Per2 = [args.p2]);
+  breturn = Math.random(Per1, Per2)
   return (breturn)
 }
     }
