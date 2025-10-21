@@ -1,4 +1,17 @@
 User-agent: Yandex
 Disallow: /shaman2016.github.io/disallow.txt
+Disallow: /shaman2016.github.io/400
+Disallow: /shaman2016.github.io/403
+Disallow: /shaman2016.github.io/404
+Disallow: /shaman2016.github.io/405
+Disallow: /shaman2016.github.io/500
+Disallow: /shaman2016.github.io/503
+Disallow: /shaman2016.github.io/инструменты/3/Проект%20(12).html
+Disallow: /shaman2016.github.io/инструменты/3/Проект%20(12)%20(1).html
+Disallow: /shaman2016.github.io/.replit
+Disallow: /shaman2016.github.io/Проект%20(7).html
+Disallow: /shaman2016.github.io/инструменты/Браузер/Yandex.html
+Disallow: /shaman2016.github.io/Проект%20(11)%20(2).html
+Disallow: /shaman2016.github.io/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20(11)%20(2).html
 Sitemap: https://shaman2016scratch.github.io/shaman2016.github.io/sitemap.txt
-Clean-param: _ym_status-check&_ym_lang&_ym_debug= /shaman2016.github.io/
+Clean-param: _ym_status-check&_ym_lang&_ym_debug /shaman2016.github.io/
