@@ -1,4 +1,4 @@
 User-agent: Yandex
 Disallow: /shaman2016.github.io/disallow.txt
 Sitemap: https://shaman2016scratch.github.io/shaman2016.github.io/sitemap.txt
-Clean-param: /s/ https://shaman2016scratch.github.io/shaman2016.github.io/clear_params.txt
+Clean-param: _ym_status-check&_ym_lang&_ym_debug= /shaman2016.github.io/
