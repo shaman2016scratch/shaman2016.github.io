@@ -2,5 +2,5 @@
   <text x="10" y="50" font-size="36" fill="black">Привет, мир!</text>
   <text x="10" y="100" font-size="36" fill="red">Красный текст!</text>
   <script>alert('SVG!')</script>
-  <p x="10 y="150" font-site="36" fill="green">Тест</p>
+  <text x="10 y="150" font-site="36" fill="green">Тест</text>
 </svg>
