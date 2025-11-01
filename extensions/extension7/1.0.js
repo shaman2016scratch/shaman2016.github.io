@@ -15,7 +15,7 @@
     throw new Error("This Extension must run unsandboxed");
   }
 
-    class modals {
+    class PyRunner {
       getInfo() {
         return {
           id: "PyRunner",
@@ -31,8 +31,8 @@
                   defaultValue: "hello world!",
                   type: Scratch.ArgumentType.STRING,
                 },
+              },
             },
-           },
           ],
         };
       }
@@ -41,5 +41,5 @@ block1(args) {
   PyOutput = `${PyOutput}${Per1}`;
 }
     }
-    Scratch.extensions.register(new modals());
+    Scratch.extensions.register(new PyRunner());
   })(Scratch);
