@@ -1,1 +1,38 @@
+// ID: RussiaScriptRinner
+// By: SHAMAN2016 <https://scratch.mit.edu/users/shaman2016/>
 
+(function (Scratch) {
+    "use strict";
+
+  if (!Scratch.extensions.unsandboxed) {
+    throw new Error("This Extension must run unsandboxed");
+  }
+
+    class modals {
+      getInfo() {
+        return {
+          id: "RussiaScriptRunner",
+          name: "RussiaScriptRunner",
+          color1: "#a3c0e1",
+          blocks: [
+            {
+              opcode: "RunRussiaScript",
+              blockType: Scratch.BlockType.command,
+              text: "Run [code]",
+              arguments: {
+                p1: {
+                  defaultValue: "",
+                  type: Scratch.ArgumentType.STRING,
+                },
+              },
+            },
+          ],
+        };
+      }
+      block1(args) {
+        Per1 = [args.code];
+        RunRussiaScript({"libs":"","code":[]})
+      }
+    }
+    Scratch.extensions.register(new modals());
+  })(Scratch);
