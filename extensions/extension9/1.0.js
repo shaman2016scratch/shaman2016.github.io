@@ -25,6 +25,11 @@
                   type: Scratch.ArgumentType.STRING,
                 },
               },
+            }, {
+              opcode: "GetOutput",
+              blockType: Scratch.BlockType.reporter,
+              text: "Get Output",
+              arguments: {},
             },
           ],
         };
@@ -32,6 +37,9 @@
       RunRussiaScript(args) {
         Per1 = [args.code];
         RunRussiaScript({"libs":"","terminal":"","code":args.code})
+      }
+      GetOutput(args) {
+        return RussiaScriptOutput
       }
     }
     Scratch.extensions.register(new RussiaScriptRunner());
