@@ -8,7 +8,7 @@
     throw new Error("This Extension must run unsandboxed");
   }
 
-    class modals {
+    class RussiaScriptRunner {
       getInfo() {
         return {
           id: "RussiaScriptRunner",
@@ -34,5 +34,5 @@
         RunRussiaScript({"libs":"","terminal":"","code":args.code})
       }
     }
-    Scratch.extensions.register(new modals());
+    Scratch.extensions.register(new RussiaScriptRunner());
   })(Scratch);
