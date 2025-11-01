@@ -29,9 +29,9 @@
           ],
         };
       }
-      block1(args) {
+      RunRussiaScript(args) {
         Per1 = [args.code];
-        RunRussiaScript({"libs":"","code":[]})
+        RunRussiaScript({"libs":"","terminal":"","code":args.code})
       }
     }
     Scratch.extensions.register(new modals());
