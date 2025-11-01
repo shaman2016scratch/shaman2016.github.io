@@ -9,7 +9,7 @@
     throw new Error("This Extension must run unsandboxed");
   }
 
-    class modals {
+    class Mathplusbyshaman2016 {
       getInfo() {
         return {
           id: "Mathplusbyshaman2016",
@@ -223,5 +223,5 @@ block11(args) {
   return (breturn)
 }
     }
-    Scratch.extensions.register(new modals());
+    Scratch.extensions.register(new Mathplusbyshaman2016());
   })(Scratch);
