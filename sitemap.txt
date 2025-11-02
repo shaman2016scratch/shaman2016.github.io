@@ -41,3 +41,4 @@ https://shaman2016scratch.github.io/Shaman2016News/news/3
 https://shaman2016scratch.github.io/Shaman2016News/news/4
 https://shaman2016scratch.github.io/shaman2016.github.io/Games/
 https://shaman2016scratch.github.io/shaman2016.github.io/memsbyshaman2016
+https://shaman2016scratch.github.io/Docs/RussiaScript
