@@ -1,0 +1,43 @@
+<p id="out">wait...</p>
+<scirpt>
+  const toSosirRules = [
+    { pattern: /жу/gi, replacement: 'җӓ' },
+    { pattern: /ля/gi, replacement: 'лө' },
+    { pattern: /кот/gi, replacement: 'кітъ' },
+    { pattern: /о/gi, replacement: 'ӧ' },
+    { pattern: /у/gi, replacement: 'ӱ' },
+    { pattern: /и/gi, replacement: 'ә' },
+    { pattern: /й/gi, replacement: 'Ї' },
+    { pattern: /(с|т|к)\b/gi, replacement: '$1ъ' }
+  ];
+  const fromSosirRules = [
+    { pattern: /кітъ/gi, replacement: 'кот' },
+    { pattern: /лө/gi, replacement: 'ля' },
+    { pattern: /җӓ/gi, replacement: 'жу' },
+    { pattern: /ӧ/gi, replacement: 'о' },
+    { pattern: /ӱ/gi, replacement: 'у' },
+    { pattern: /ә/gi, replacement: 'и' },
+    { pattern: /Ї/gi, replacement: 'й' },
+    { pattern: /(с|т|к)ъ\b/gi, replacement: '$1' }
+  ];
+
+  function applyRules(text, rules) {
+    let result = text;
+    for (const rule of rules) {
+      result = result.replace(rule.pattern, rule.replacement);
+    }
+    return result;
+  }
+  function translate(text, direction) {
+    if (direction === 'to') {
+      return applyRules(text, toSosirRules);
+    } else if (direction === 'from') {
+      return applyRules(text, fromSosirRules);
+    } else {
+      console.error('Неизвестное направление перевода');
+    }
+  }
+  const url = new URL(window.location)
+  const sp = url.searchParams
+  translate(sp.t, sp.d)
+</scirpt>
