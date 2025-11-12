@@ -1,5 +1,5 @@
 <p id="out">wait...</p>
-<scirpt>
+<script>
   const toSosirRules = [
     { pattern: /жу/gi, replacement: 'җӓ' },
     { pattern: /ля/gi, replacement: 'лө' },
@@ -10,6 +10,7 @@
     { pattern: /й/gi, replacement: 'Ї' },
     { pattern: /(с|т|к)\b/gi, replacement: '$1ъ' }
   ];
+
   const fromSosirRules = [
     { pattern: /кітъ/gi, replacement: 'кот' },
     { pattern: /лө/gi, replacement: 'ля' },
@@ -28,6 +29,7 @@
     }
     return result;
   }
+
   function translate(text, direction) {
     if (direction === 'to') {
       return applyRules(text, toSosirRules);
@@ -35,9 +37,19 @@
       return applyRules(text, fromSosirRules);
     } else {
       console.error('Неизвестное направление перевода');
+      return '';
     }
   }
-  const url = new URL(window.location)
-  const sp = url.searchParams
-  translate(sp.t, sp.d)
-</scirpt>
+
+  const url = new URL(window.location);
+  const sp = url.searchParams;
+  const text = sp.get('t');
+  const direction = sp.get('d');
+
+  if (text && direction) {
+    const result = translate(text, direction);
+    document.getElementById('out').textContent = result;
+  } else {
+    document.getElementById('out').textContent = 'Ошибка: укажите параметры t и d';
+  }
+</script>
