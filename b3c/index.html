@@ -1,0 +1,51 @@
+<p id="out">wait</p>
+<script>
+const BASE3CODE_CHARS = 'АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя0¹⁰ⁿ∅1½⅓¼⅕⅙⅐⅛⅑⅒2⅔⅖3¾⅗⅜4⅘5⅚⅝6⅞789ⰀⰁⰂⰃⰄⰅⰆⰇⰈⰉⰊⰋⰌⰍⰎⰏⰐⰑⰒⰓⰔⰕЄꙀІЇѸꙊ&§¶#№₽₿¢¥£$€%‰_-—–+±()⟨⟩/\\@~`*…"”„“«»\'’‚‘‹›:;!¡?¿×÷^√∆<≤>≥=≠≈°⌀•™©®|{}[]😀😃😄🥳🗨️⚠️🟥⬜🔲💻👑🐧🖥️🐈AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz ';
+
+
+const charToCode = {};
+for (let i = 0; i < BASE3CODE_CHARS.length; i++) {
+  charToCode[BASE3CODE_CHARS[i]] = String(i + 1).padStart(3, '0');
+}
+
+function base3codeEncode(text) {
+  let result = '';
+  for (const char of text) {
+    if (!(char in charToCode)) {
+      throw new Error(`Символ "${char}" не поддерживается`);
+    }
+    result += charToCode[char];
+  }
+  return result;
+}
+
+function getUrlParams() {
+  const params = new URLSearchParams(window.location.search);
+  return {
+    t: params.get('t') || '',
+    d: params.get('d') || ''
+  };
+}
+
+(async () => {
+  try {
+    const { t: text, d: action } = getUrlParams();
+
+
+    if (action !== 'encode') {
+      document.getElementById('out').textContent = 'Ошибка: поддерживаемое действие — "encode"';
+      return;
+    }
+
+    if (!text) {
+      document.getElementById('out').textContent = 'Ошибка: параметр "t" пуст';
+      return;
+    }
+
+    const encoded = base3codeEncode(text);
+    document.getElementById('out').textContent = encoded;
+  } catch (error) {
+    document.getElementById('out').textContent = `Ошибка: ${error.message}`;
+  }
+})();
+</script>
