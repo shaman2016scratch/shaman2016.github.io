@@ -9,6 +9,7 @@
   if (!Scratch.extensions.unsandboxed) {
     throw new Error("This Extension must run unsandboxed");
   }
+  ModHttpShaman2016 = {}
 
     class ModHttpShaman2016 {
       getInfo() {
@@ -18,6 +19,20 @@
           color1: "#a3c0e1",
           blocks: [
             {
+              opcode: "setHead",
+              blockType: Scratch.BlockType.COMMAND,
+              text: "set headers [header]",
+              arguments: {
+                url: {
+                  defaultValue: "https://api.scratch.mit.edu/users/shaman2016/",
+                  type: Scratch.ArgumentType.STRING,
+                },
+              },
+              params: {
+                defaultValue: '{"Content-Type": "application/json"}',
+                type: Scratch.ArgumentType.STRING,
+              },
+            }, {
               opcode: "mget",
               blockType: Scratch.BlockType.REPORTER,
               text: "get [url] headers: [params]",
@@ -91,38 +106,41 @@
           ],
         };
       }
+      setHead(args) {
+        ModHttpShaman2016.headers = args['header']
+      }
       mget(args) {
         Otvet = fetch(args['url'], {  
           method: 'GET',  
-          headers: JSON.parse(args['params'])
+          headers: ModHttpShaman2016.headers
         });
         return JSON.stringify(Otvet)
       }
       mpost(args) {
         Otvet = fetch(args['url'], {  
           method: 'POST',  
-          headers: JSON.parse(args['params'])
+          headers: ModHttpShaman2016.headers
         });
         return JSON.stringify(Otvet)
       }
       mput(args) {
         Otvet = fetch(args['url'], {  
           method: 'PUT',  
-          headers: JSON.parse(args['params'])
+          headers: ModHttpShaman2016.headers
         });
         return JSON.stringify(Otvet)
       }
       mdelete(args) {
         Otvet = fetch(args['url'], {  
           method: 'DELETE',  
-          headers: JSON.parse(args['params'])
+          headers: ModHttpShaman2016.headers
         });
         return JSON.stringify(Otvet)
       }
       mhead(args) {
         Otvet = fetch(args['url'], {  
           method: 'HEAD',  
-          headers: JSON.parse(args['params'])
+          headers: ModHttpShaman2016.headers
         });
         return JSON.stringify(Otvet)
       }
