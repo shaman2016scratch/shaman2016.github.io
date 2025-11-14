@@ -94,35 +94,35 @@
       mget(args) {
         Otvet = fetch(args['url'], {  
           method: 'GET',  
-          headers: args['params'].parse
+          headers: JSON.parse(args['params'])
         });
         return JSON.stringify(Otvet)
       }
       mpost(args) {
         Otvet = fetch(args['url'], {  
           method: 'POST',  
-          headers: args['params'].parse
+          headers: JSON.parse(args['params'])
         });
         return JSON.stringify(Otvet)
       }
       mput(args) {
         Otvet = fetch(args['url'], {  
           method: 'PUT',  
-          headers: args['params'].parse
+          headers: JSON.parse(args['params'])
         });
         return JSON.stringify(Otvet)
       }
       mdelete(args) {
         Otvet = fetch(args['url'], {  
           method: 'DELETE',  
-          headers: args['params'].parse
+          headers: JSON.parse(args['params'])
         });
         return JSON.stringify(Otvet)
       }
       mhead(args) {
         Otvet = fetch(args['url'], {  
           method: 'HEAD',  
-          headers: args['params'].parse
+          headers: JSON.parse(args['params'])
         });
         return JSON.stringify(Otvet)
       }
