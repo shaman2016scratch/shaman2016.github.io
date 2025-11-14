@@ -28,7 +28,7 @@
                 },
               },
               params: {
-                defaultValue: '{}',
+                defaultValue: '{"Content-Type": "application/json"}',
                 type: Scratch.ArgumentType.STRING,
               },
             }, {
@@ -42,7 +42,7 @@
                 },
               },
               params: {
-                defaultValue: '{}',
+                defaultValue: '{"Content-Type": "application/json"}',
                 type: Scratch.ArgumentType.STRING,
               },
             }, {
@@ -56,7 +56,7 @@
                 },
               },
               params: {
-                defaultValue: '{}',
+                defaultValue: '{"Content-Type": "application/json"}',
                 type: Scratch.ArgumentType.STRING,
               },
             }, {
@@ -70,7 +70,7 @@
                 },
               },
               params: {
-                defaultValue: '{}',
+                defaultValue: '{"Content-Type": "application/json"}',
                 type: Scratch.ArgumentType.STRING,
               },
             }, {
@@ -84,7 +84,7 @@
                 },
               },
               params: {
-                defaultValue: '{}',
+                defaultValue: '{"Content-Type": "application/json"}',
                 type: Scratch.ArgumentType.STRING,
               },
             },
@@ -94,37 +94,37 @@
       mget(args) {
         Otvet = fetch(args['url'], {  
           method: 'GET',  
-          headers: args['params']
+          headers: args['params'].parse
         });
-        return Otvet
+        return JSON.stringify(Otvet)
       }
       mpost(args) {
         Otvet = fetch(args['url'], {  
           method: 'POST',  
-          headers: args['params']
+          headers: args['params'].parse
         });
-        return Otvet
+        return JSON.stringify(Otvet)
       }
       mput(args) {
         Otvet = fetch(args['url'], {  
           method: 'PUT',  
-          headers: args['params']
+          headers: args['params'].parse
         });
-        return Otvet
+        return JSON.stringify(Otvet)
       }
       mdelete(args) {
         Otvet = fetch(args['url'], {  
           method: 'DELETE',  
-          headers: args['params']
+          headers: args['params'].parse
         });
-        return Otvet
+        return JSON.stringify(Otvet)
       }
       mhead(args) {
         Otvet = fetch(args['url'], {  
           method: 'HEAD',  
-          headers: args['params']
+          headers: args['params'].parse
         });
-        return Otvet
+        return JSON.stringify(Otvet)
       }
     }
     Scratch.extensions.register(new ModHttpShaman2016());
