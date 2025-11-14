@@ -4,7 +4,7 @@
 // By: SHAMAN2016 <https://scratch.mit.edu/users/shaman2016/>
 
 (function (Scratch) {
-    "use strict";
+  "use strict";
 
   if (!Scratch.extensions.unsandboxed) {
     throw new Error("This Extension must run unsandboxed");
