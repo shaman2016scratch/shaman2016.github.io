@@ -1,4 +1,4 @@
-/ Name: JavaScript Runner
+// Name: JavaScript Runner
 // ID: shaman2016JavaScriptRunner
 // Author: SHAMAN2016 <https://scratch.mit.edu/users/SHAMAN2016/>
 
@@ -14,8 +14,8 @@
 
     const RunnerDopFunc = `
         per = {}
-        RunnerVersion = '2.1'
-        RunnerData = {
+        const RunnerVersion = '2.1'
+        const RunnerData = {
             "name": "JavaScript Runner",
             "By": [
                 {
@@ -27,6 +27,7 @@
             "version": "2.1",
             "id": "shaman2016JavaScriptRunner"
         }
+        const RunnerFunc = {}
         function output(out) {
             return out;
         }
