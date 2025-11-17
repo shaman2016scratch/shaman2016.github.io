@@ -99,7 +99,7 @@
                     script.onerror = () => {
                         reject(new Error(`Error in unsandboxed script. Check console for more info`));
                     };
-                    script.src = `data:application/javascript,${encodeURIComponent(functions)};${encodeURIComponent(code)}`;
+                    script.src = `data:application/javascript,${encodeURIComponent(RunnerDopFunc)};${encodeURIComponent(code)}`;
                     document.body.appendChild(script);
                     return;
                 }
