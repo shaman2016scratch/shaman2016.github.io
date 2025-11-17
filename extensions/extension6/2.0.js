@@ -72,17 +72,17 @@
         }
       async block_1(args) {
         shaman2016JavaScriptRunner = {}
-        shaman2016JavaScriptRunner.code = `function(arg) { args["n1"] }`
+        shaman2016JavaScriptRunner.code = `function(args2) { ${args["n1"]} }`
         shaman2016JavaScriptRunner.code(args['args'])
       }
       async block_2(args) {
         shaman2016JavaScriptRunner = {}
-        shaman2016JavaScriptRunner.code = `function(arg) { args["n2"] }`
+        shaman2016JavaScriptRunner.code = `function(args2) { ${args["n2"]} }`
         return shaman2016JavaScriptRunner.code(args['args'])
       }
       async block_3(args) {
         shaman2016JavaScriptRunner = {}
-        shaman2016JavaScriptRunner.code = `function(arg) { args["n3"] }`
+        shaman2016JavaScriptRunner.code = `function(args2) { ${args["n3"]} }`
         return shaman2016JavaScriptRunner.code(args['args'])
       }
     }
