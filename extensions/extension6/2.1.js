@@ -116,11 +116,11 @@
             this.SandboxJsRun(args.CODE);
         }
         reporter (args) {
-            const string = Cast.toString(this.SandboxJsRun(args.CODE));
+            const string = this.SandboxJsRun(args.CODE);
             return string;
         }
         boolean (args) {
-            const boolean = Cast.toBoolean(this.SandboxJsRun(args.CODE));
+            const boolean = this.SandboxJsRun(args.CODE);
             return boolean;
         }
     }
