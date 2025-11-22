@@ -1,3 +1,4 @@
+DEF = {}
 function pimport(i) {
   importName = i
   if importName == "math" {
@@ -28,4 +29,10 @@ function m(z1,z2,z3) {
   } else {
     console.error("the library for mathematics has not been imported")
   }
+}
+function def(n, c) {
+  DEF[n] = c
+}
+function func(n, p) {
+  return eval(DEF[n](p))
 }
