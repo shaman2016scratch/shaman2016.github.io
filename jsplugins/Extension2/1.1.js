@@ -8,7 +8,7 @@ function getversion() {
 function textContent(e,t) {
  document.getElementById(e).textContent = t;
 }
-function search.urlparams(t) {
+function search_urlparams(t) {
   return (searchParams.get(t));
 }
 function urlparams() {
