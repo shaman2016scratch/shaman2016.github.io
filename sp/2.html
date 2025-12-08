@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Translator Sosirs Language</title>
+  </head>
+  <body>
+    <h1>Translator Sosirs language</h1>
+    <p>text: <textarea id="txt" placeholder="Text" rows="6" cols="30"></textarea></p>
+    <p>Transfer direction: <button onclick="TranDire('m')">◀️</button><p id="dire">From Russian to Sosirs language</p><button onclick="TranDire('p')">▶️</button></p>
+    <button onclick="transfer()">Transfer</button>
+    <h2>Translation:</h2>
+    <p id="translation">Not Content</p>
+    <script>
+      Data = {}; Data.t = document.getElementById("txt"); Data.d = document.getElementById("dire"); Data.tr = document.getElementBtId('translation')
+      Dires = {
+        "From Russian to Sosirs language": "to",
+        "From Sosirs language to Russian": "from"
+      }
+      async function TranDire(d) {
+        if (d === 'm') {
+          if (Object.keys(Dires).indexOf(Data.d.textContent) === 0) {
+            dire = Object.keys(Dires)[1]
+          } else {
+            dire = Object.keys(Dires)[0]
+          }
+          Data.d.textContent = dire
+        } else {
+          if (Object.keys(Dires).indexOf(Data.d.textContent) === 0) {
+            dire = Object.keys(Dires)[1]
+          } else {
+            dire = Object.keys(Dires)[0]
+          }
+          Data.d.textContent = dire
+        }
+      }
+      async function Get(url) {
+        return fetch(url)
+      }
+      function transfer() {
+        Data.tr.textContent = Get(`https://shaman2016scratch.github.io/shaman2016.github.io/sp/?t=${Data.t.input}&d=${Dires[Data.d]}`)
+      }
+    </script>
+  </body>
+</html>
