@@ -45,3 +45,7 @@ https://shaman2016scratch.github.io/Docs/RussiaScript/
 https://shaman2016scratch.github.io/Shaman2016News/news/5
 https://shaman2016scratch.github.io/Shaman2016News/news/6
 https://shaman2016scratch.github.io/Shaman2016News/news/7
+https://shaman2016scratch.github.io/Shaman2016News/news/8
+https://shaman2016scratch.github.io/Shaman2016News/news/9
+https://shaman2016scratch.github.io/codeEditor/
+https://shaman2016scratch.github.io/notepad.html
