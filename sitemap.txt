@@ -51,3 +51,4 @@ https://shaman2016scratch.github.io/codeEditor/
 https://shaman2016scratch.github.io/notepad.html
 https://shaman2016scratch.github.io/Shaman2016News/profile?user=SHAMAN2016
 https://shaman2016scratch.github.io/Shaman2016News/news/10
+https://shaman2016scratch.github.io/Shaman2016News/news/11
