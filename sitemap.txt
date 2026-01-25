@@ -40,3 +40,5 @@ https://shaman2016scratch.github.io/Docs/RussiaScript/
 https://shaman2016scratch.github.io/codeEditor/
 https://shaman2016scratch.github.io/notepad.html
 https://shaman2016scratch.github.io/shaman2016.github.io/wiki/sosirsOS/
+https://shaman2016scratch.github.io/tools/tbc.html
+https://shaman2016scratch.github.io/tools/mini-brow.html
